@@ -1,0 +1,145 @@
+
+@font-face{
+	font-family: "capital";
+	src: url(./assets/daskapital.woff);
+}
+
+@font-face{
+	font-family: "abolish";
+	src: url(./assets/daskapital.woff);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+	font-family: "capital";
+	overflow-y: scroll;
+}
+
+canvas{
+width: 100vmin;
+	/*position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+
+}
+
+.abolish{
+	font-family: 'abolish';
+	color:red;
+	visibility: hidden;
+
+}
+
+.hide{
+	visibility: hidden;
+
+}
+
+
+.letter-box{
+	color: #b0bac6;
+	display: flex;
+	font-size: 20vmin;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	-webkit-text-stroke-color: #8e5e9b;
+	-webkit-text-stroke-width: 1.5px;
+	filter: drop-shadow(4px 4px 4px #7894b1);
+
+}
+
+.img-box img{
+	width: 80vw;
+}
+
+.img-box{
+	text-align: center;
+}
+
+.letter{
+
+}
+
+
+
+@media only screen and (max-width: 675px) {
+
+	body{
+
+			background-color:yellow;
+
+
+	}
+
+
+	.letter-box{
+		/*flex-direction: column;*/
+		font-size:15vmin;
+		margin: 3em 2em 0 2em;
+		text-transform: lowercase;
+		color: red;
+		-webkit-text-stroke-color: transparent;
+		/*#405b36;*/
+		filter: drop-shadow(2px 2px 2px black);
+		transform: scaleY(4);
+	
+	}
+
+	.letter{
+		/*transform: scaleY(10);*/
+
+	}
+
+	.abolish{
+	visibility: visible;
+	font-size: 15vmin;
+	margin: 2em 1em 0 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	filter: drop-shadow(2px 2px 2px black);
+	transform: scaleY(4);
+
+
+	}
+
+	.hide{
+		visibility: visible;
+		text-transform: uppercase;
+	}
+
+	.ism{
+		display: flex;
+		margin-top: 2.5em;
+		justify-content: space-around;
+		align-items: stretch;
+		font-size: 15vmin;
+		color: red;
+		filter: drop-shadow(2px 2px 2px black);
+			transform: scaleY(4);
+	}
+
+
+
+	.imagebox{
+	
+	}
+
+	img{
+		width: 90vw;
+		height: 100vh;
+		transform: scaleY(5);
+	
+		margin: 0;
+
+	}
+
+}
